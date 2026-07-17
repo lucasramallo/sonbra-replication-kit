@@ -2,14 +2,19 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21403789.svg)](https://doi.org/10.5281/zenodo.21403789)
 [![Licença: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-blue.svg)](LICENSE)
-[![Licença: CC BY 4.0](https://img.shields.io/badge/artigo-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+[![Licença: CC BY 4.0](https://img.shields.io/badge/resultados-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-Artefato de reprodução do experimento descrito em `main_mqe.tex`.
+Pacote de reprodução do experimento: **código, resultados brutos e análise
+estatística**.
 
-Este pacote contém **tudo que é necessário** para reproduzir os resultados do
-artigo a partir do dataset público: código, resultados brutos, análise
-estatística e o próprio texto. A única dependência externa é o dataset SONBRA,
-obtido no Zenodo (ver [`data/README.md`](data/README.md)).
+Este pacote contém tudo que é necessário para reproduzir os resultados a partir
+do dataset público. A única dependência externa é o dataset SONBRA, obtido no
+Zenodo (ver [`data/README.md`](data/README.md)).
+
+> **O texto do artigo não faz parte deste pacote.** O que está aqui é o
+> experimento e sua análise — os dados que sustentam o artigo, não o artigo.
+> As tabelas em `tabelas/` são geradas em LaTeX prontas para inclusão, e os
+> números que elas contêm são exatamente os reportados no texto.
 
 **Índice:** [O experimento](#o-experimento-em-uma-frase) ·
 [Resultados](#principais-resultados) · [Como reproduzir](#como-reproduzir) ·
@@ -81,22 +86,15 @@ Os três últimos scripts leem apenas JSON e **rodam sem o dataset** — se quis
 apenas conferir a análise estatística sobre os resultados já publicados aqui,
 pule o passo 2 e o primeiro comando.
 
-### 4. Compilar o artigo
-
-```bash
-pdflatex main_mqe.tex && bibtex main_mqe && pdflatex main_mqe.tex && pdflatex main_mqe.tex
-```
-
 ---
 
 ## Estrutura
 
 ```
 sonbra-replication-kit/
-├── main_mqe.tex                    # o artigo
 ├── requirements.txt                # versões congeladas
 ├── README.md
-├── LICENSE                         # MIT (código) + CC BY 4.0 (artigo/resultados)
+├── LICENSE                         # MIT (código) + CC BY 4.0 (resultados)
 ├── CITATION.cff                    # metadados de citação
 ├── data/
 │   └── README.md                   # como obter e organizar o dataset
@@ -135,13 +133,14 @@ experimento_repeticoes.py ──→ results/resultados_repeticoes.json
                                               │                               │
                                               └───────────────┬───────────────┘
                                                               ▼
-                                                        main_mqe.tex
+                                                    artigo (fora deste pacote,
+                                                     via \input das tabelas)
 ```
 
-**As tabelas do artigo são geradas, não transcritas.** `main_mqe.tex` inclui
+**As tabelas do artigo são geradas, não transcritas.** O artigo inclui
 `tabelas/*.tex` via `\input`, então reexecutar o pipeline e recompilar propaga
 qualquer mudança nos resultados para o texto sem intervenção manual — não há
-como o artigo divergir dos dados.
+como o artigo divergir dos dados que o sustentam.
 
 ---
 
@@ -248,7 +247,7 @@ seção "Ameaças à Validade" do artigo:
 | Componente | Licença |
 |---|---|
 | Código (`src/`) | MIT |
-| Artigo e resultados (`main_mqe.tex`, `results/`) | CC BY 4.0 |
+| Resultados (`results/`, `tabelas/`, `figs/`) | CC BY 4.0 |
 | Dataset SONBRA | não incluído — ver termos no Zenodo |
 
 Texto completo em [`LICENSE`](LICENSE).
