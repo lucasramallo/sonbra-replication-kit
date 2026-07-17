@@ -1,14 +1,8 @@
 # Dataset: não versionado (baixar do Zenodo — ver data/README.md)
 data/base_sonbra/
 
-# Artefatos de compilação do LaTeX
-*.aux
-*.bbl
-*.blg
-*.log
-*.out
-*.pdf
-*.synctex.gz
+# O fonte LaTeX do artigo não faz parte deste pacote — só o PDF compilado
+# (artigo.pdf), que é versionado. Sem .tex aqui, não há build a ignorar.
 
 # Python
 __pycache__/

@@ -6,8 +6,8 @@ abstract: >-
   leakage por fragmentação de música no benchmark SONBRA e avalia uma camada
   de IA simbólica acoplada a um Perceptron Multicamadas. Desenho com cinco
   repetições e comparações pareadas por semente, com intervalos de confiança
-  e testes de hipótese. Inclui código, resultados brutos e análise estatística.
-  O texto do artigo não faz parte deste pacote.
+  e testes de hipótese. Inclui o artigo em PDF, o código, os resultados brutos
+  e a análise estatística.
 authors:
   - family-names: "Silva"
     given-names: "João Lucas de Brito Ramalho"

@@ -2,19 +2,21 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21403789.svg)](https://doi.org/10.5281/zenodo.21403789)
 [![Licença: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-blue.svg)](LICENSE)
-[![Licença: CC BY 4.0](https://img.shields.io/badge/resultados-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+[![Licença: CC BY 4.0](https://img.shields.io/badge/artigo%20e%20resultados-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
-Pacote de reprodução do experimento: **código, resultados brutos e análise
-estatística**.
+Pacote de reprodução do experimento: **o artigo, o código, os resultados brutos
+e a análise estatística**.
+
+📄 **Leia o artigo:** [`artigo.pdf`](artigo.pdf)
 
 Este pacote contém tudo que é necessário para reproduzir os resultados a partir
 do dataset público. A única dependência externa é o dataset SONBRA, obtido no
 Zenodo (ver [`data/README.md`](data/README.md)).
 
-> **O texto do artigo não faz parte deste pacote.** O que está aqui é o
-> experimento e sua análise — os dados que sustentam o artigo, não o artigo.
-> As tabelas em `tabelas/` são geradas em LaTeX prontas para inclusão, e os
-> números que elas contêm são exatamente os reportados no texto.
+> O artigo é distribuído em **PDF**; o fonte LaTeX não faz parte do pacote. As
+> tabelas em `tabelas/` são as do artigo, geradas a partir dos resultados — é
+> por elas que se verifica que os números publicados vêm dos dados aqui
+> incluídos.
 
 **Índice:** [O experimento](#o-experimento-em-uma-frase) ·
 [Resultados](#principais-resultados) · [Como reproduzir](#como-reproduzir) ·
@@ -92,9 +94,10 @@ pule o passo 2 e o primeiro comando.
 
 ```
 sonbra-replication-kit/
+├── artigo.pdf                      # o artigo (PDF; fonte LaTeX não incluído)
 ├── requirements.txt                # versões congeladas
 ├── README.md
-├── LICENSE                         # MIT (código) + CC BY 4.0 (resultados)
+├── LICENSE                         # MIT (código) + CC BY 4.0 (artigo e resultados)
 ├── CITATION.cff                    # metadados de citação
 ├── data/
 │   └── README.md                   # como obter e organizar o dataset
@@ -133,8 +136,8 @@ experimento_repeticoes.py ──→ results/resultados_repeticoes.json
                                               │                               │
                                               └───────────────┬───────────────┘
                                                               ▼
-                                                    artigo (fora deste pacote,
-                                                     via \input das tabelas)
+                                                     artigo.pdf
+                                              (compilado com \input das tabelas)
 ```
 
 **As tabelas do artigo são geradas, não transcritas.** O artigo inclui
@@ -247,7 +250,7 @@ seção "Ameaças à Validade" do artigo:
 | Componente | Licença |
 |---|---|
 | Código (`src/`) | MIT |
-| Resultados (`results/`, `tabelas/`, `figs/`) | CC BY 4.0 |
+| Artigo e resultados (`artigo.pdf`, `results/`, `tabelas/`, `figs/`) | CC BY 4.0 |
 | Dataset SONBRA | não incluído — ver termos no Zenodo |
 
 Texto completo em [`LICENSE`](LICENSE).
