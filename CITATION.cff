@@ -13,7 +13,15 @@ authors:
     given-names: "João Lucas de Brito Ramalho"
     affiliation: "Universidade Federal de Campina Grande, Programa de Pós-Graduação em Ciência da Computação"
 repository-code: "https://github.com/lucasramallo/sonbra-replication-kit"
-url: "https://github.com/lucasramallo/sonbra-replication-kit"
+url: "https://doi.org/10.5281/zenodo.21403789"
+doi: "10.5281/zenodo.21403789"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21403789"
+    description: "Concept DOI — resolve sempre para a versão mais recente do pacote."
+  - type: doi
+    value: "10.5281/zenodo.21403790"
+    description: "DOI da versão 1.0.0 especificamente."
 date-released: 2026-07-16
 version: "1.0.0"
 license: MIT

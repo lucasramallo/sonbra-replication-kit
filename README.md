@@ -1,5 +1,6 @@
 # Replicação e Extensão Neuro-Simbólica do Benchmark SONBRA
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21403789.svg)](https://doi.org/10.5281/zenodo.21403789)
 [![Licença: MIT](https://img.shields.io/badge/c%C3%B3digo-MIT-blue.svg)](LICENSE)
 [![Licença: CC BY 4.0](https://img.shields.io/badge/artigo-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
@@ -203,6 +204,15 @@ Todo o código está em `src/`, sob licença MIT, sem dependências privadas ou
 serviços externos. O pacote é autocontido: não requer instalação além de
 `requirements.txt`, não faz chamadas de rede e roda em CPU comum.
 
+### Preservação de longo prazo
+
+O pacote está **arquivado no Zenodo** sob o DOI
+[10.5281/zenodo.21403789](https://doi.org/10.5281/zenodo.21403789), com
+preservação de longo prazo garantida pelo CERN. O arquivamento é o que torna a
+referência do artigo estável: uma URL de repositório quebra se o projeto for
+renomeado, movido ou removido; o DOI, não. O GitHub permanece como espaço de
+navegação, *issues* e contribuição — o Zenodo, como registro citável.
+
 ### Reprodutibilidade
 
 - **Sementes fixadas e publicadas** — `{42, 7, 123, 2024, 99}`, no código.
@@ -252,9 +262,13 @@ Metadados legíveis por máquina em [`CITATION.cff`](CITATION.cff).
 **Este trabalho:**
 
 > Silva, J. L. B. R. (2026). *Replicação e Extensão Neuro-Simbólica do Benchmark
-> SONBRA para Classificação de Gêneros Musicais Brasileiros*. Programa de
-> Pós-Graduação em Ciência da Computação, Universidade Federal de Campina Grande.
-> https://github.com/lucasramallo/sonbra-replication-kit
+> SONBRA para Classificação de Gêneros Musicais Brasileiros* [pacote de
+> reprodução]. Zenodo. DOI:
+> [10.5281/zenodo.21403789](https://doi.org/10.5281/zenodo.21403789)
+
+Cite o **DOI**, não a URL do GitHub: o DOI acima é o *concept DOI*, permanente e
+sempre resolvendo para a versão mais recente. Para citar a versão exata usada,
+use o DOI da release específica (`10.5281/zenodo.21403790` para a v1.0.0).
 
 **O dataset (cite sempre que usar este pacote):**
 
