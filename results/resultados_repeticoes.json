@@ -1,0 +1,286 @@
+{
+  "seeds": [
+    42,
+    7,
+    123,
+    2024,
+    99
+  ],
+  "arquitetura_fixa": {
+    "combo_features": "mel+mfcc+tempogram",
+    "n_features": 532,
+    "hidden_layer_sizes": [
+      200,
+      100
+    ],
+    "activation": "tanh",
+    "origem": "selecionada uma única vez por grid search em etapa preparatória; fator fixo, não re-selecionada a cada semente"
+  },
+  "execucoes": [
+    {
+      "seed": 42,
+      "tempo_seg": 233.9,
+      "com_leakage": {
+        "acc_teste": 0.938,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.912,
+          "Forró": 0.928,
+          "Forró Piseiro": 0.9573,
+          "Funk": 0.9893,
+          "Pagode": 0.9227,
+          "Samba": 0.88,
+          "Samba-Enredo": 0.968,
+          "Sertanejo": 0.9467
+        },
+        "overlap_musicas_pct": 99.64
+      },
+      "sem_leakage_mlp_puro": {
+        "acc_teste": 0.791,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.6853,
+          "Forró": 0.6987,
+          "Forró Piseiro": 0.9493,
+          "Funk": 0.8693,
+          "Pagode": 0.7547,
+          "Samba": 0.68,
+          "Samba-Enredo": 0.9467,
+          "Sertanejo": 0.744
+        }
+      },
+      "sem_leakage_mlp_simbolico": {
+        "acc_teste": 0.7917,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.6987,
+          "Forró": 0.6907,
+          "Forró Piseiro": 0.9467,
+          "Funk": 0.8693,
+          "Pagode": 0.7653,
+          "Samba": 0.672,
+          "Samba-Enredo": 0.9467,
+          "Sertanejo": 0.744
+        },
+        "taxa_intervencao": 0.0893,
+        "regras_disparadas": {
+          "R1: Forró Piseiro eletrônico (rms + spectral_centroid altos)": 18,
+          "R2: Forró acústico (rms + spectral_centroid intermediários)": 74,
+          "R3: Bossa Nova suave (zcr + spectral_centroid baixos)": 81,
+          "R4: Samba-Enredo enérgico (rms + roll_off altos)": 45,
+          "R5: Pagode brilhante (rms + spectral_centroid acima do Samba)": 39,
+          "R6: Sertanejo (zcr intermediário, spectral_centroid baixo-médio)": 33
+        }
+      }
+    },
+    {
+      "seed": 7,
+      "tempo_seg": 135.3,
+      "com_leakage": {
+        "acc_teste": 0.9267,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.8693,
+          "Forró": 0.9333,
+          "Forró Piseiro": 0.952,
+          "Funk": 0.9787,
+          "Pagode": 0.8987,
+          "Samba": 0.8507,
+          "Samba-Enredo": 0.9893,
+          "Sertanejo": 0.9413
+        },
+        "overlap_musicas_pct": 99.64
+      },
+      "sem_leakage_mlp_puro": {
+        "acc_teste": 0.7897,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.6453,
+          "Forró": 0.68,
+          "Forró Piseiro": 0.9253,
+          "Funk": 0.9467,
+          "Pagode": 0.8293,
+          "Samba": 0.6571,
+          "Samba-Enredo": 0.9227,
+          "Sertanejo": 0.7135
+        }
+      },
+      "sem_leakage_mlp_simbolico": {
+        "acc_teste": 0.7877,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.6453,
+          "Forró": 0.6773,
+          "Forró Piseiro": 0.9253,
+          "Funk": 0.9493,
+          "Pagode": 0.8267,
+          "Samba": 0.6442,
+          "Samba-Enredo": 0.9253,
+          "Sertanejo": 0.7108
+        },
+        "taxa_intervencao": 0.0879,
+        "regras_disparadas": {
+          "R1: Forró Piseiro eletrônico (rms + spectral_centroid altos)": 24,
+          "R2: Forró acústico (rms + spectral_centroid intermediários)": 102,
+          "R3: Bossa Nova suave (zcr + spectral_centroid baixos)": 67,
+          "R4: Samba-Enredo enérgico (rms + roll_off altos)": 43,
+          "R5: Pagode brilhante (rms + spectral_centroid acima do Samba)": 29,
+          "R6: Sertanejo (zcr intermediário, spectral_centroid baixo-médio)": 40
+        }
+      }
+    },
+    {
+      "seed": 123,
+      "tempo_seg": 117.6,
+      "com_leakage": {
+        "acc_teste": 0.9217,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.872,
+          "Forró": 0.9333,
+          "Forró Piseiro": 0.9547,
+          "Funk": 0.984,
+          "Pagode": 0.9013,
+          "Samba": 0.8613,
+          "Samba-Enredo": 0.9387,
+          "Sertanejo": 0.928
+        },
+        "overlap_musicas_pct": 99.69
+      },
+      "sem_leakage_mlp_puro": {
+        "acc_teste": 0.7877,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.6293,
+          "Forró": 0.744,
+          "Forró Piseiro": 0.936,
+          "Funk": 0.896,
+          "Pagode": 0.7947,
+          "Samba": 0.6447,
+          "Samba-Enredo": 0.88,
+          "Sertanejo": 0.7792
+        }
+      },
+      "sem_leakage_mlp_simbolico": {
+        "acc_teste": 0.7881,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.6373,
+          "Forró": 0.7387,
+          "Forró Piseiro": 0.9387,
+          "Funk": 0.8987,
+          "Pagode": 0.8,
+          "Samba": 0.6289,
+          "Samba-Enredo": 0.88,
+          "Sertanejo": 0.7844
+        },
+        "taxa_intervencao": 0.0886,
+        "regras_disparadas": {
+          "R1: Forró Piseiro eletrônico (rms + spectral_centroid altos)": 11,
+          "R2: Forró acústico (rms + spectral_centroid intermediários)": 104,
+          "R3: Bossa Nova suave (zcr + spectral_centroid baixos)": 77,
+          "R4: Samba-Enredo enérgico (rms + roll_off altos)": 28,
+          "R5: Pagode brilhante (rms + spectral_centroid acima do Samba)": 24,
+          "R6: Sertanejo (zcr intermediário, spectral_centroid baixo-médio)": 49
+        }
+      }
+    },
+    {
+      "seed": 2024,
+      "tempo_seg": 124.5,
+      "com_leakage": {
+        "acc_teste": 0.9197,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.8533,
+          "Forró": 0.9387,
+          "Forró Piseiro": 0.9707,
+          "Funk": 0.9867,
+          "Pagode": 0.8933,
+          "Samba": 0.8427,
+          "Samba-Enredo": 0.9467,
+          "Sertanejo": 0.9253
+        },
+        "overlap_musicas_pct": 99.82
+      },
+      "sem_leakage_mlp_puro": {
+        "acc_teste": 0.8031,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.7013,
+          "Forró": 0.784,
+          "Forró Piseiro": 0.938,
+          "Funk": 0.8693,
+          "Pagode": 0.8613,
+          "Samba": 0.6373,
+          "Samba-Enredo": 0.9467,
+          "Sertanejo": 0.6849
+        }
+      },
+      "sem_leakage_mlp_simbolico": {
+        "acc_teste": 0.8041,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.7173,
+          "Forró": 0.784,
+          "Forró Piseiro": 0.9353,
+          "Funk": 0.8667,
+          "Pagode": 0.8587,
+          "Samba": 0.632,
+          "Samba-Enredo": 0.9467,
+          "Sertanejo": 0.6904
+        },
+        "taxa_intervencao": 0.0894,
+        "regras_disparadas": {
+          "R1: Forró Piseiro eletrônico (rms + spectral_centroid altos)": 15,
+          "R2: Forró acústico (rms + spectral_centroid intermediários)": 98,
+          "R3: Bossa Nova suave (zcr + spectral_centroid baixos)": 101,
+          "R4: Samba-Enredo enérgico (rms + roll_off altos)": 27,
+          "R5: Pagode brilhante (rms + spectral_centroid acima do Samba)": 22,
+          "R6: Sertanejo (zcr intermediário, spectral_centroid baixo-médio)": 44
+        }
+      }
+    },
+    {
+      "seed": 99,
+      "tempo_seg": 133.1,
+      "com_leakage": {
+        "acc_teste": 0.9273,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.8533,
+          "Forró": 0.9573,
+          "Forró Piseiro": 0.9467,
+          "Funk": 0.984,
+          "Pagode": 0.92,
+          "Samba": 0.872,
+          "Samba-Enredo": 0.9547,
+          "Sertanejo": 0.9307
+        },
+        "overlap_musicas_pct": 99.46
+      },
+      "sem_leakage_mlp_puro": {
+        "acc_teste": 0.807,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.7147,
+          "Forró": 0.784,
+          "Forró Piseiro": 0.9118,
+          "Funk": 0.9147,
+          "Pagode": 0.8587,
+          "Samba": 0.648,
+          "Samba-Enredo": 0.9547,
+          "Sertanejo": 0.6658
+        }
+      },
+      "sem_leakage_mlp_simbolico": {
+        "acc_teste": 0.808,
+        "acuracia_por_genero": {
+          "Bossa Nova": 0.7227,
+          "Forró": 0.7787,
+          "Forró Piseiro": 0.9171,
+          "Funk": 0.9147,
+          "Pagode": 0.8667,
+          "Samba": 0.6347,
+          "Samba-Enredo": 0.9547,
+          "Sertanejo": 0.6712
+        },
+        "taxa_intervencao": 0.0826,
+        "regras_disparadas": {
+          "R1: Forró Piseiro eletrônico (rms + spectral_centroid altos)": 33,
+          "R2: Forró acústico (rms + spectral_centroid intermediários)": 98,
+          "R3: Bossa Nova suave (zcr + spectral_centroid baixos)": 59,
+          "R4: Samba-Enredo enérgico (rms + roll_off altos)": 55,
+          "R5: Pagode brilhante (rms + spectral_centroid acima do Samba)": 51,
+          "R6: Sertanejo (zcr intermediário, spectral_centroid baixo-médio)": 47
+        }
+      }
+    }
+  ]
+}

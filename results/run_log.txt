@@ -1,0 +1,70 @@
+======================================================================
+REPETIÇÃO COM 5 SEEDS — MQE (Métodos Quantitativos e Experimentação)
+Seeds: [42, 7, 123, 2024, 99]
+======================================================================
+Dataset: 10000 amostras, 1993 músicas, 532 features (mel+mfcc+tempogram)
+
+
+──────────────────────────────────────────────────────────────────────
+SEED = 42
+──────────────────────────────────────────────────────────────────────
+  [A] Com leakage (split aleatório por fragmento)...
+      acc=0.9380  overlap_musicas=99.6%
+  [B/C] Sem leakage (split por música) + camada simbólica...
+      MLP puro:        acc=0.7910
+      MLP + simbólica: acc=0.7917  (delta=+0.0007)
+  Tempo desta seed: 3.9 min
+
+──────────────────────────────────────────────────────────────────────
+SEED = 7
+──────────────────────────────────────────────────────────────────────
+  [A] Com leakage (split aleatório por fragmento)...
+      acc=0.9267  overlap_musicas=99.6%
+  [B/C] Sem leakage (split por música) + camada simbólica...
+      MLP puro:        acc=0.7897
+      MLP + simbólica: acc=0.7877  (delta=-0.0020)
+  Tempo desta seed: 2.3 min
+
+──────────────────────────────────────────────────────────────────────
+SEED = 123
+──────────────────────────────────────────────────────────────────────
+  [A] Com leakage (split aleatório por fragmento)...
+      acc=0.9217  overlap_musicas=99.7%
+  [B/C] Sem leakage (split por música) + camada simbólica...
+      MLP puro:        acc=0.7877
+      MLP + simbólica: acc=0.7881  (delta=+0.0004)
+  Tempo desta seed: 2.0 min
+
+──────────────────────────────────────────────────────────────────────
+SEED = 2024
+──────────────────────────────────────────────────────────────────────
+  [A] Com leakage (split aleatório por fragmento)...
+      acc=0.9197  overlap_musicas=99.8%
+  [B/C] Sem leakage (split por música) + camada simbólica...
+      MLP puro:        acc=0.8031
+      MLP + simbólica: acc=0.8041  (delta=+0.0010)
+  Tempo desta seed: 2.1 min
+
+──────────────────────────────────────────────────────────────────────
+SEED = 99
+──────────────────────────────────────────────────────────────────────
+  [A] Com leakage (split aleatório por fragmento)...
+      acc=0.9273  overlap_musicas=99.5%
+  [B/C] Sem leakage (split por música) + camada simbólica...
+      MLP puro:        acc=0.8070
+      MLP + simbólica: acc=0.8080  (delta=+0.0010)
+  Tempo desta seed: 2.2 min
+
+======================================================================
+RESUMO — acurácia geral por seed e cenário
+======================================================================
+seed       com_leakage   sem_leakage    +simbolica
+42              0.9380        0.7910        0.7917
+7               0.9267        0.7897        0.7877
+123             0.9217        0.7877        0.7881
+2024            0.9197        0.8031        0.8041
+99              0.9273        0.8070        0.8080
+
+Resultados salvos em results/resultados_repeticoes.json
+
+Tempo total: 12.5 min
