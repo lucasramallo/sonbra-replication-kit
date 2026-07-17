@@ -12,6 +12,8 @@ authors:
   - family-names: "Silva"
     given-names: "João Lucas de Brito Ramalho"
     affiliation: "Universidade Federal de Campina Grande, Programa de Pós-Graduação em Ciência da Computação"
+repository-code: "https://github.com/lucasramallo/sonbra-replication-kit"
+url: "https://github.com/lucasramallo/sonbra-replication-kit"
 date-released: 2026-07-16
 version: "1.0.0"
 license: MIT

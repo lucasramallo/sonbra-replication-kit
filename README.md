@@ -254,6 +254,7 @@ Metadados legíveis por máquina em [`CITATION.cff`](CITATION.cff).
 > Silva, J. L. B. R. (2026). *Replicação e Extensão Neuro-Simbólica do Benchmark
 > SONBRA para Classificação de Gêneros Musicais Brasileiros*. Programa de
 > Pós-Graduação em Ciência da Computação, Universidade Federal de Campina Grande.
+> https://github.com/lucasramallo/sonbra-replication-kit
 
 **O dataset (cite sempre que usar este pacote):**
 
