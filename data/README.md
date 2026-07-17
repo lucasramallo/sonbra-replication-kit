@@ -61,8 +61,8 @@ export SONBRA_DATA=/caminho/para/base_sonbra/parquet/mean
 python src/experimento_repeticoes.py
 ```
 
-A ordem de busca é: `SONBRA_DATA` → `MQE/data/base_sonbra/parquet/mean` →
-`../data/base_sonbra/parquet/mean`. Se nada for encontrado, o script falha
+A ordem de busca é: `SONBRA_DATA` → `data/base_sonbra/parquet/mean` (neste
+pacote) → `../data/base_sonbra/parquet/mean` (no diretório-pai). Se nada for encontrado, o script falha
 com uma mensagem listando onde procurou.
 
 ## 4. Verificar

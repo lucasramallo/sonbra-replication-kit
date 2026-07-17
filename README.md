@@ -91,7 +91,7 @@ pdflatex main_mqe.tex && bibtex main_mqe && pdflatex main_mqe.tex && pdflatex ma
 ## Estrutura
 
 ```
-MQE/
+sonbra-replication-kit/
 ├── main_mqe.tex                    # o artigo
 ├── requirements.txt                # versões congeladas
 ├── README.md
