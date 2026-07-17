@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "Se este pacote for útil ao seu trabalho, por favor cite-o conforme abaixo."
+title: "Replicação e Extensão Neuro-Simbólica do Benchmark SONBRA para Classificação de Gêneros Musicais Brasileiros — pacote de reprodução"
+abstract: >-
+  Pacote de reprodução de um experimento que quantifica o efeito do data
+  leakage por fragmentação de música no benchmark SONBRA e avalia uma camada
+  de IA simbólica acoplada a um Perceptron Multicamadas. Desenho com cinco
+  repetições e comparações pareadas por semente, com intervalos de confiança
+  e testes de hipótese. Inclui código, resultados brutos, análise estatística
+  e o texto do artigo.
+authors:
+  - family-names: "Silva"
+    given-names: "João Lucas de Brito Ramalho"
+    affiliation: "Universidade Federal de Campina Grande, Programa de Pós-Graduação em Ciência da Computação"
+date-released: 2026-07-16
+version: "1.0.0"
+license: MIT
+keywords:
+  - SONBRA
+  - classificação de gêneros musicais
+  - recuperação de informação musical
+  - data leakage
+  - inteligência artificial neuro-simbólica
+  - reprodutibilidade
+  - desenho experimental
+references:
+  - type: article
+    title: "SONBRA: um dataset público e anotado para pesquisas de classificação de gêneros musicais brasileiros"
+    authors:
+      - family-names: "Ribeiro"
+        given-names: "Anderson Vinícius"
+      - family-names: "Santana"
+        given-names: "João Marcos de Oliveira"
+      - family-names: "Oliveira"
+        given-names: "Marcos Abreu de"
+      - family-names: "Gomes"
+        given-names: "Cláudio"
+    journal: "Revista Eletrônica de Iniciação Científica em Computação"
+    volume: 24
+    issue: 1
+    year: 2026
+    doi: "10.5753/reic.2026.7222"
+    notes: "Dataset e benchmark de referência replicados neste trabalho."
