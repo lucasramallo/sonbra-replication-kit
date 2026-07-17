@@ -1,0 +1,17 @@
+# Dataset: não versionado (baixar do Zenodo — ver data/README.md)
+data/base_sonbra/
+
+# Artefatos de compilação do LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.pdf
+*.synctex.gz
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
